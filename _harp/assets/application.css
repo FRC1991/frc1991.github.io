@@ -1,0 +1,93 @@
+/* flexbox */
+body {
+	display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;			/* TWEENER - IE 10 */
+	display: -webkit-flex;			/* NEW - Chrome */
+	display: flex;					/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	-webkit-box-flex: 1 0 auto;		/* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1 0 auto;		/* OLD - Firefox 19- */
+	-webkit-flex: 1 0 auto;			/* Chrome */
+	-ms-flex: 1 0 auto;				/* IE 10 */
+	flex: 1 0 auto;					/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+/* menu */
+.header-content a {
+	margin-bottom: 5px;
+}
+
+/* carousel indicators */
+.slider .indicators .indicator-item.active {
+	background-color: #fb8c00;
+}
+
+/* feature image crop and center with fixed height */
+.feature-img {
+    width: 100%;
+	height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-img img {
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* parallax height */
+.parallax-container {
+	height: 500px;
+}
+
+/* photo grid */
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* .grid-item */
+.grid-sizer,
+.grid-item {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.grid-sizer,
+	.grid-item {
+		width: 33.333%;
+	}
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	width: 100%;
+}
+
+/* materialbox */
+#materialbox-overlay {
+	#z-index: 901;
+}
+#materialboxed {
+	#z-index: 901;
+}
+#materialbox-caption {
+	#z-index: 902;
+}

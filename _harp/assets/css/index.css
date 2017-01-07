@@ -1,0 +1,12 @@
+.jumbotron {
+	background-image: url("../imgs/team.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /* Other potential options could be cover or contain - https://www.sitepoint.com/css3-background-size-property/ */
+	background-color: rgba(0, 0 ,0, 0.5);  
+  background-blend-mode: multiply; /* PHOTOSHOP LAYER STYLES IN CSS3 HELL YA */
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+	font-weight: 300;
+}

@@ -1,0 +1,47 @@
+extends _templates/base.jade
+
+mixin course(name, teacher, teacherEmail, syllabusLink, desc, isHonors, isECE, isAP)
+	- isHonors = isHonors || true
+	- isECE = isECE || false
+	- isAO = isAP || false
+	.col-md-4
+		.panel.panel-default
+			.panel-heading
+				h5.title #{name} #[small #{teacher}]
+					.btn-group.pull-right
+						button.btn.btn-link.btn-sm.dropdown-toggle(type = "button", data-toggle = "dropdown")
+							span.glyphicon.glyphicon-option-vertical
+						ul.dropdown-menu
+							li
+								a(href = "mailto://" + teacherEmail) #[span.glyphicon.glyphicon-envelope] Email Teacher
+							li
+								a(href = syllabusLink) #[span.glyphicon.glyphicon-file] View Syllabus
+			.panel-body
+				p= desc
+			.panel-footer
+				h5.text-right
+					if isHonors
+						span.label.label-default Honors
+					if isECE
+						span.label.label-danger ECE
+					if isAP
+						span.label.label-primary AP
+
+
+
+block head
+	title Academics | UHSSE
+	link(rel = "stylesheet", href = "/resources/css/academics.css")
+
+
+block body
+	.container-fluid
+		h1.title.text-center Departments
+		each department, name in departments
+			h3.title #{name} #[small Led by #[b #{department.lead}]]
+			p= department.desc
+			.row
+				each course in department.courses
+					+course(course.name, course.teacher, course.teacherEmail, course.syllabusLink, course.desc, course.isHonors, course.isECE, course.isAP)
+			br
+

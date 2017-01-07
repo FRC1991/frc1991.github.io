@@ -1,0 +1,34 @@
+{
+	"academics": {
+		"departments": {
+			"Mathematics": {
+				"lead": "Taylor Bacon",
+				"desc": "STEM Mathematics is a study of mathematical methods that are typically used in science, engineering, business, and industry with a review of essential concepts from Algebra 2 and Pre-Calculus.  Students will work on application problems which include trigonometry, systems of linear equations, quadratic, exponential, and logarithmic function basics to mathematically model problems and derive solutions with emphasis on the use of technology and other tools.",
+				"courses": [
+					{
+						"name": "Algebra 2",
+						"teacher": "Kate Grayeb",
+						"teacherEmail": "idk@aol.com",
+						"syllabusLink": "http://google.com/search?q=learn+math",
+						"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra odio vel dolor volutpat, id faucibus diam commodo. Suspendisse malesuada velit in ornare aliquam. Quisque mauris turpis, aliquam id molestie viverra, ultrices vel nisl. Etiam ligula sem, aliquam ac elit vitae, ultrices ornare orci. Morbi rutrum pellentesque rhoncus.",
+						"isAP": true
+					}
+				]
+			},
+			"Matematics": {
+				"lead": "Taylor Bacon",
+				"desc": "STEM Mathematics is a study of mathematical methods that are typically used in science, engineering, business, and industry with a review of essential concepts from Algebra 2 and Pre-Calculus.  Students will work on application problems which include trigonometry, systems of linear equations, quadratic, exponential, and logarithmic function basics to mathematically model problems and derive solutions with emphasis on the use of technology and other tools.",
+				"courses": [
+					{
+						"name": "Algebra 2",
+						"teacher": "Kate Grayeb",
+						"teacherEmail": "idk@aol.com",
+						"syllabusLink": "http://google.com/search?q=learn+math",
+						"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra odio vel dolor volutpat, id faucibus diam commodo. Suspendisse malesuada velit in ornare aliquam. Quisque mauris turpis, aliquam id molestie viverra, ultrices vel nisl. Etiam ligula sem, aliquam ac elit vitae, ultrices ornare orci. Morbi rutrum pellentesque rhoncus.",
+						"isAP": true
+					}
+				]
+			}
+		}
+	}
+}

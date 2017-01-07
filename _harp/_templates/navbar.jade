@@ -1,0 +1,21 @@
+block navbar
+nav.navbar.navbar-default.navbar-fixed-top(role = "navigation")
+	.container
+		.navbar-header
+			//- Hamburger menu
+			button.navbar-toggle.collapsed.pull-left(data-toggle = "collapse", data-target="#navbar-links")
+				span.sr-only Toggle Navigation
+				//- Repeated three times because each makes up a line in the hamburger
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href = "/") 1991
+		div.collapse.navbar-collapse#navbar-links
+			ul.nav.navbar-nav.navbar-right
+				button.btn.btn-danger.navbar-btn(type = "button") MEMBERS
+				//- Build the navbar
+				- var links = {"Home" : "/", "About": "/about", "Sponsors": "/sponsors", "Media": "/media", "Awards": "/awards"}
+				- for (var link in links)
+					- url = links[link]
+					li
+						a(href = url) #{link}

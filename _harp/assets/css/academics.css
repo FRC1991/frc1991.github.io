@@ -1,0 +1,26 @@
+body {
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+.panel-body {
+	padding-bottom: 0px;
+}
+
+.panel-heading, .panel-footer {
+	padding-top: 1px;
+	padding-bottom: 3px;
+	background: white;
+}
+
+.panel-footer h5 {
+	margin-top: 0;
+}
+
+.panel-footer .label {
+	margin-right: 5px;
+}
+
+ul.dropdown-menu li a {
+	padding-right: 5px;
+}

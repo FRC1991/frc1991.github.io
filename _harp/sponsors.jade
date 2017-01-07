@@ -1,0 +1,33 @@
+extends _templates/base.jade
+
+block head
+	title Sponsors | FRC Team 1991
+	link(rel = "stylesheet", href = "assets/css/sponsors.css")
+
+block body
+	.container-fluid
+		.row
+			.col-md-10.col-md-offset-1
+				.panel.panel-default
+					.panel-body
+						h3 We are still competing thanks to our proud sponsors.
+				.panel.panel-default
+					.panel-heading
+						h3.panel-title Our Sponsors
+					.panel-body
+						mixin sponsor(name)
+							- url = "assets/imgs/sponsors/" + name + ".jpg"
+							img.img-responsive.sponsor(src = url)
+						.row
+							.col-xs-6
+								+sponsor("nutmeg")
+								+sponsor("lagana")
+								+sponsor("tallan")
+								+sponsor("pw")
+								+sponsor("tsunami_tsolutions")
+							.col-xs-6
+								+sponsor("uhart")
+								+sponsor("aetna")
+								+sponsor("stm")
+								+sponsor("pas")
+								+sponsor("schaller")

@@ -1,0 +1,49 @@
+extends _templates/base.jade
+
+block head
+	title Sponsors | FRC Team 1991
+	link(rel = "stylesheet", href = "assets/css/sponsors.css")
+
+block body
+	.container-fluid
+		.row
+			.col-md-5.col-md-offset-1
+				.panel.panel-primary
+					.panel-heading
+						h3.panel-title Programming
+					.panel-body
+						p Most of our recent programming has been done with a combination of Java (robot side) and LabVIEW (drive station side).
+						.btn-group-vertical.btn-block
+							a.btn.btn-default(href = "https://github.com/frc1991/robot2016") 2015 Swerve Drive Trial
+							a.btn.btn-default(href = "https://github.com/frc1991/2015swervedrive") 2016 Robot
+							a.btn.btn-default(href = "https://github.com/frc1991/2015swervedrive") 2016 Robot Dashboard (LabVIEW)
+			.col-md-5
+				.panel.panel-danger
+					.panel-heading
+						h3.panel-title Design (CAD)
+					.panel-body
+						p We use the latest version of SolidWorks to design our robots.
+						.btn-group-vertical.btn-block
+							a.btn.btn-default(href = "https://github.com/frc1991/solidworks") 2016 Robot
+		.row
+			.col-md-10.col-md-offset-1
+				.panel.panel-default
+					.panel-heading
+						h3.panel-title Our Robots
+					.panel-body
+						mixin sponsor(name)
+							- url = "assets/imgs/sponsors/" + name + ".jpg"
+							img.img-responsive.sponsor(src = url)
+						.row
+							.col-xs-6
+								+sponsor("nutmeg")
+								+sponsor("lagana")
+								+sponsor("tallan")
+								+sponsor("pw")
+								+sponsor("tsunami_tsolutions")
+							.col-xs-6
+								+sponsor("uhart")
+								+sponsor("aetna")
+								+sponsor("stm")
+								+sponsor("pas")
+								+sponsor("schaller")

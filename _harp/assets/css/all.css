@@ -11,7 +11,7 @@ a.navbar-brand img {
 }
 
 body {
-	padding-top: 65px;
+	padding-top: 100px;
 }
 
 .text-white {
@@ -29,4 +29,8 @@ body {
 
 .make-longer-pls {
 	padding-bottom: 9em;
+}
+
+.sponsor {
+	padding-bottom: 20px;
 }

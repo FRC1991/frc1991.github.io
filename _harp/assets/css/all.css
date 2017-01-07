@@ -1,7 +1,13 @@
+
 /* CSS added here will apply to every single page */
 
 .navbar-header {
 	padding-left: 10px;  /* For the hamburger button in mobile */
+}
+
+a.navbar-brand img {
+	max-width: 100px;
+	margin-top: -7px; /* Helps with vertical centering */
 }
 
 body {

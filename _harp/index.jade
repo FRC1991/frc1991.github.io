@@ -10,5 +10,39 @@ block body
 			span.text-stroke.text-center
 				h1.text-white This is FRC Team 1991.
 				p.text-white We are the dragons.
-			.make-longer-pls
-			.make-longer-pls
+		.make-longer-pls
+	.container-fluid
+		.row
+			.col-md-10.col-md-offset-1
+				.panel.panel-default
+					.panel-heading
+						h3.title About Us
+					.panel-body
+						p Team 1991, the Dragons, is a student run high school team which was founded in 2007 by a group of students, teachers and mentors who wanted to represent their school's engineering focus in a competitive environment.
+						p Participation in the team gives students an opportunity to learn about engineering and technology through hands on experience. Since the team operates like a business, students acquire many professional skills, such as managing a budget, making presentations and planning our build season. As an extracurricular program, the team allows students to apply concepts learned in school as well as develop new skills thanks to various workshops taught by our mentors. In the past years, the students were able to take advantage of the SolidWorks, LabView, Welding and Electronics classes taught by our mentors.
+						p Each year, the team participates in the F.I.R.S.T. Robotics Competition which F.I.R.S.T. calls as the "Varsity Sport for the Mind™". The teams are given only six weeks to design, construct and program a robot which will compete against other teams in regional and national events. This closely mimics the real life challenges engineers face when working on the projects.
+				.panel.panel-default
+					.panel-heading
+						h3.title Our Sponsors
+					.panel-body
+						mixin sponsor(name)
+							- url = "assets/imgs/sponsors/" + name + ".jpg"
+							img.img-responsive.sponsor(src = url)
+						.row
+							.col-xs-6
+								+sponsor("nutmeg")
+								+sponsor("lagana")
+								+sponsor("tallan")
+								+sponsor("pw")
+								+sponsor("tsunami_tsolutions")
+							.col-xs-6
+								+sponsor("uhart")
+								+sponsor("aetna")
+								+sponsor("stm")
+								+sponsor("pas")
+								+sponsor("schaller")
+				.panel.panel-default
+					.panel-heading
+						h3.title Links
+					.panel-body
+						p hi

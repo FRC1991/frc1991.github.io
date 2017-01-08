@@ -1,8 +1,8 @@
 extends _templates/base.jade
 
 block head
-	title Sponsors | FRC Team 1991
-	link(rel = "stylesheet", href = "assets/css/sponsors.css")
+	title Creations | FRC Team 1991
+	link(rel = "stylesheet", href = "assets/css/creations.css")
 
 block body
 	.container-fluid
@@ -13,37 +13,34 @@ block body
 						h3.panel-title Programming
 					.panel-body
 						p Most of our recent programming has been done with a combination of Java (robot side) and LabVIEW (drive station side).
-						.btn-group-vertical.btn-block
-							a.btn.btn-default(href = "https://github.com/frc1991/robot2016") 2015 Swerve Drive Trial
-							a.btn.btn-default(href = "https://github.com/frc1991/2015swervedrive") 2016 Robot
-							a.btn.btn-default(href = "https://github.com/frc1991/2015swervedrive") 2016 Robot Dashboard (LabVIEW)
+						.list-group
+							a.list-group-item(href = "https://github.com/frc1991/Robot2016") 2015 Swerve Drive Trial
+							a.list-group-item(href = "https://github.com/frc1991/2015SwerveDrive") 2016 Robot
+							a.list-group-item(href = "https://github.com/frc1991/Dashboard2016") 2016 Robot Dashboard (LabVIEW)
 			.col-md-5
 				.panel.panel-danger
 					.panel-heading
 						h3.panel-title Design (CAD)
 					.panel-body
 						p We use the latest version of SolidWorks to design our robots.
-						.btn-group-vertical.btn-block
-							a.btn.btn-default(href = "https://github.com/frc1991/solidworks") 2016 Robot
+						.list-group
+							a.list-group-item(href = "https://github.com/frc1991/SolidWorks") 2016 Robot
 		.row
 			.col-md-10.col-md-offset-1
 				.panel.panel-default
 					.panel-heading
 						h3.panel-title Our Robots
 					.panel-body
-						mixin sponsor(name)
-							- url = "assets/imgs/sponsors/" + name + ".jpg"
-							img.img-responsive.sponsor(src = url)
-						.row
-							.col-xs-6
-								+sponsor("nutmeg")
-								+sponsor("lagana")
-								+sponsor("tallan")
-								+sponsor("pw")
-								+sponsor("tsunami_tsolutions")
-							.col-xs-6
-								+sponsor("uhart")
-								+sponsor("aetna")
-								+sponsor("stm")
-								+sponsor("pas")
-								+sponsor("schaller")
+						mixin robot(game, year)
+							- url = "assets/imgs/robots/" + year + ".jpg"
+							.media
+								.media-left
+									img.img-thumbnail.img-responsive(src = url)
+								.media-body
+									h4= game
+									h5= year
+						+robot("Rebound Rumble", 2012)
+						+robot("Ultimate Ascent", 2013)
+						+robot("Aerial Assist", 2014)
+						+robot("Recycle Rush", 2015)
+						+robot("Stronghold", 2016)

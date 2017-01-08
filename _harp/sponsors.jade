@@ -15,19 +15,21 @@ block body
 					.panel-heading
 						h3.panel-title Our Sponsors
 					.panel-body
-						mixin sponsor(name)
+						p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
+						mixin sponsor(name, site)
 							- url = "assets/imgs/sponsors/" + name + ".jpg"
-							img.img-responsive.sponsor(src = url)
+							a(href = site) 
+								img.img-responsive.sponsor(src = url)
 						.row
 							.col-xs-6
-								+sponsor("nutmeg")
-								+sponsor("lagana")
-								+sponsor("tallan")
-								+sponsor("pw")
-								+sponsor("tsunami_tsolutions")
+								+sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
+								+sponsor("lagana", "http://www.laganaflorist.com/")
+								+sponsor("tallan", "https://www.tallan.com/")
+								+sponsor("pw", "http://www.pw.utc.com/")
+								+sponsor("tsunami_tsolutions", "http://www.tsunamitsolutions.com/")
 							.col-xs-6
-								+sponsor("uhart")
-								+sponsor("aetna")
-								+sponsor("stm")
-								+sponsor("pas")
-								+sponsor("schaller")
+								+sponsor("uhart", "http://www.hartford.edu/")
+								+sponsor("aetna", "https://www.aetna.com/")
+								+sponsor("stm", "http://www.satellitetoolmachine.net/")
+								+sponsor("pas", "http://www.pas-technologies.com/")
+								+sponsor("schaller", "http://www.schalleracura.com/")

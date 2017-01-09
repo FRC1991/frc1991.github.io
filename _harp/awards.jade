@@ -1,0 +1,56 @@
+extends _templates/base.jade
+
+block head
+	title Awards | FRC Team 1991
+	//- link(rel = "stylesheet", href = "assets/css/awards.css", target = "_blank")
+	style.
+		.list-group-item-text {
+			color: #737c89;
+		}
+
+mixin event(name)
+	.panel.panel-default
+		.panel-heading
+			h3.panel-title= name
+		.panel-body
+			.list-group
+				block
+
+mixin award(name, desc)
+	.list-group-item
+		h4.list-group-item-heading= name
+		p.list-group-item-text= desc
+		
+block body
+	.container-fluid
+		.row
+			.col-md-10.col-md-offset-1
+				h4 2016
+				+event("NE District - Hartford Event")
+					+award("Gracious Professionalism Award sponsored by Johnson & Johnson", "Celebrates outstanding demonstration of FIRST Core Values such as continuous Gracious Professionalism® working together both on and off the playing field.")
+				h4 2015
+				+event("NE District - Hartford Event")
+					+award("Gracious Professionalism Award sponsored by Johnson & Johnson", "Celebrates outstanding demonstration of FIRST Core Values such as continuous Gracious Professionalism® working together both on and off the playing field.")
+				h4 2014
+				+event("NE District - Groton Event")
+					+award("District Event Winner", "Winner of the Groton competition together with teams 230 and 1699.")
+				h4 2013
+				+event("BAE Systems Granite State Regional")
+					+award("Industrial Safety Award sponsored by Underwriters Laboratories", "Celebrates the team that progresses beyond safety fundamentals by using innovative ways to eliminate or protect against hazards.")
+				h4 2012
+				+event("WPI Regional")
+					+award("Innovation in Control Award sponsored by Rockwell Automation", "Celebrates an innovative control system or application of control components – electrical, mechanical, or software – to provide unique machine functions.")
+					+award("Coopertition Award", "Celebrates outstanding demonstration of FIRST Core Values such as continuous Gracious Professionalism® working together both on and off the playing field.")
+				+event("Northeast Utilities FIRST Connecticut Regional")
+					+award("Innovation in Control Award sponsored by Rockwell Automation", "Celebrates an innovative control system or application of control components – electrical, mechanical, or software – to provide unique machine functions.")
+				h4 2008
+				+event("Connecticut Regional")
+					+award("Regional Finalists", "Finalists of the Connecticut Regional.")
+					+award("Delphi 'Driving Tomorrow's Technology' Award")
+				h4 2007
+				+event("UTC Connecticut Regional")
+					+award("Website Award", "The Website Award recognizes excellence in student-designed, built, and managed FIRST team websites.")
+					+award("Coopertition Award", "Celebrates outstanding demonstration of FIRST Core Values such as continuous Gracious Professionalism® working together both on and off the playing field.")
+				+event("BAE SYSTEMS Granite State Regional")
+					+award("Rookie All Star Award", "Celebrates the rookie team exemplifying a young but strong partnership effort, as well as implementing the mission of FIRST to inspire students to learn more about science and technology.")
+					+award("Highest Rookie Seed", "Celebrates the highest-seeded rookie team at the conclusion of the qualifying rounds.")

@@ -2,7 +2,7 @@ extends _templates/base.jade
 
 block head
 	title Creations | FRC Team 1991
-	link(rel = "stylesheet", href = "assets/css/creations.css")
+	link(rel = "stylesheet", href = "assets/css/creations.css", target = "_blank")
 
 block body
 	.container-fluid
@@ -14,9 +14,9 @@ block body
 					.panel-body
 						p Most of our recent programming has been done with a combination of Java (robot side) and LabVIEW (drive station side).
 						.list-group
-							a.list-group-item(href = "https://github.com/frc1991/Robot2016") 2015 Swerve Drive Trial
-							a.list-group-item(href = "https://github.com/frc1991/2015SwerveDrive") 2016 Robot
-							a.list-group-item(href = "https://github.com/frc1991/Dashboard2016") 2016 Robot Dashboard (LabVIEW)
+							a.list-group-item(href = "https://github.com/frc1991/Robot2016", target = "_blank") 2015 Swerve Drive Trial
+							a.list-group-item(href = "https://github.com/frc1991/2015SwerveDrive", target = "_blank") 2016 Robot
+							a.list-group-item(href = "https://github.com/frc1991/Dashboard2016", target = "_blank") 2016 Robot Dashboard (LabVIEW)
 			.col-md-5
 				.panel.panel-danger
 					.panel-heading
@@ -24,7 +24,9 @@ block body
 					.panel-body
 						p We use the latest version of SolidWorks to design our robots.
 						.list-group
-							a.list-group-item(href = "https://github.com/frc1991/SolidWorks") 2016 Robot
+							a.list-group-item(href = "https://github.com/frc1991/SolidWorks", target = "_blank") Our SolidWorks Repository
+							a.list-group-item(href = "https://github.com/FRC1991/SolidWorks/blob/master/robot.stl", target = "_blank") View Our 2016 Robot in 3D
+
 		.row
 			.col-md-10.col-md-offset-1
 				.panel.panel-default

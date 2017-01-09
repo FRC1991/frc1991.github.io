@@ -1,3 +1,1 @@
-$(document).ready(function() {
-	
-});
+// Doesn't actually do anything

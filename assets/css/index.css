@@ -1,0 +1,18 @@
+body {
+	padding-top: 65px !important;
+}
+
+.jumbotron {
+	background: url("../imgs/team.jpg") no-repeat center center;
+	background-size: 100% 100%;
+	background-color: rgba(0, 0 ,0, 0.5);  
+  background-blend-mode: multiply;
+}
+
+.jumbotron .container {
+	padding-bottom: 9em;
+}
+
+.jumbotron h1 {
+	font-weight: 300;
+}

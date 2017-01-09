@@ -18,7 +18,7 @@ block body
 						p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
 						mixin sponsor(name, site)
 							- url = "assets/imgs/sponsors/" + name + ".jpg"
-							a(href = site) 
+							a(href = site, target = "_blank") 
 								img.img-responsive.sponsor(src = url)
 						.row
 							.col-xs-6
@@ -27,9 +27,11 @@ block body
 								+sponsor("tallan", "https://www.tallan.com/")
 								+sponsor("pw", "http://www.pw.utc.com/")
 								+sponsor("tsunami_tsolutions", "http://www.tsunamitsolutions.com/")
+								+sponsor("bestbuy", "https://corporate.bestbuy.com/community-grants-page/")
 							.col-xs-6
 								+sponsor("uhart", "http://www.hartford.edu/")
 								+sponsor("aetna", "https://www.aetna.com/")
 								+sponsor("stm", "http://www.satellitetoolmachine.net/")
 								+sponsor("pas", "http://www.pas-technologies.com/")
 								+sponsor("schaller", "http://www.schalleracura.com/")
+								+sponsor("prokop", "https://www.attorneyunion.org/company-kutz-prokop-in-portland-ct-89485")

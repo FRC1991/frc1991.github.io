@@ -1,0 +1,29 @@
+extends _templates/base.jade
+
+block head
+	title Members | FRC Team 1991
+	link(rel = "stylesheet", href = "assets/css/members.css", target = "_blank")
+
+block body
+	.container-fluid
+		.row
+			.col-md-10.col-md-offset-1
+				.panel.panel-default
+					.panel-heading
+						h3.panel-title.pull-left Calendar 
+						a.btn.btn-danger.pull-right(href = "https://drive.google.com/file/d/0B0CmCsmCcB5eVks2WVZkU3N6LWtxejZ3RkJkNWd5NmhZMmdB/view", target = "_blank") View as image
+						.clearfix
+					.panel-body
+						iframe.col-xs-12(src = "https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=frc1991dragons%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York", frameborder = "0")
+				.panel.panel-default
+					.panel-heading
+						h3.panel-title Forms
+					.panel-body
+						.list-group
+							a.list-group-item(href = "https://docs.google.com/forms/d/1RDoJhH_LZzDhKSZsguEgW-dmum_fiHrIoUh8zjvslQI/viewform?usp=drive_web&edit_requested=true", target = "_blank") Registration Form
+							a.list-group-item(href = "https://login.firstinspires.org/core/login?signin=5507cd70100dfda24a4f014565c31494", target = "_blank") STIMS
+							a.list-group-item(href = "http://www.signupgenius.com/go/10c0e4aafad2dabfd0-20162017", target = "_blank") SignUpGenius
+							a.list-group-item(href = "https://drive.google.com/file/d/0B0CmCsmCcB5eWVlvSmZSM2RHX0Z2MVFmZERPWFlYbW1vcWNF/view", target = "_blank") 4-H Code of Conduct
+							a.list-group-item(href = "https://docs.google.com/forms/d/1RDoJhH_LZzDhKSZsguEgW-dmum_fiHrIoUh8zjvslQI/viewform?usp=drive_web&edit_requested=true", target = "_blank") 4-H Online
+							a.list-group-item(href = "https://docs.google.com/document/d/1c2HMcaSjvcWNRHxJnHsY8yAGROTlTrlGIdnUUWiJr9Y/edit?usp=drive_web", target = "_blank") Event Planning Form
+							

@@ -13,7 +13,7 @@ nav.navbar.navbar-default.navbar-fixed-top(role = "navigation")
 				img(src = "assets/imgs/logo.jpg")
 		div.collapse.navbar-collapse#navbar-links
 			ul.nav.navbar-nav.navbar-right
-				button.btn.btn-danger.navbar-btn(type = "button") MEMBERS
+				a.btn.btn-danger.navbar-btn(href = "/members") MEMBERS
 				//- Build the navbar
 				- var links = {"Home" : "/", "Sponsors": "/sponsors", "Creations": "/creations", "Media": "/media", "Awards": "/awards"}
 				- for (var link in links)

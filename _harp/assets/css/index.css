@@ -3,8 +3,10 @@ body {
 }
 
 .jumbotron {
-	background: url("../imgs/team.jpg") no-repeat center center;
-	background-size: 100% 100%;
+	background-image: url("../imgs/team.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
 	background-color: rgba(0, 0 ,0, 0.5);  
   background-blend-mode: multiply;
 }

@@ -16,18 +16,19 @@ block body
 						h3.panel-title Our Sponsors
 					.panel-body
 						p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
+						.make-slightly-longer-pls
 						mixin sponsor(name, site)
 							- url = "assets/imgs/sponsors/" + name + ".jpg"
 							a(href = site, target = "_blank") 
 								img.img-responsive.sponsor(src = url)
 						.row
 							.col-xs-6
+								+sponsor("pw", "http://www.pw.utc.com/")
+								+sponsor("bestbuy", "https://corporate.bestbuy.com/community-grants-page/")
 								+sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
 								+sponsor("lagana", "http://www.laganaflorist.com/")
 								+sponsor("tallan", "https://www.tallan.com/")
-								+sponsor("pw", "http://www.pw.utc.com/")
 								+sponsor("tsunami_tsolutions", "http://www.tsunamitsolutions.com/")
-								+sponsor("bestbuy", "https://corporate.bestbuy.com/community-grants-page/")
 							.col-xs-6
 								+sponsor("uhart", "http://www.hartford.edu/")
 								+sponsor("aetna", "https://www.aetna.com/")

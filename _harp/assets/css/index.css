@@ -18,3 +18,8 @@ body {
 .jumbotron h1 {
 	font-weight: 300;
 }
+
+.sponsor-small-height {
+	position: relative;
+  transform: translateY(60%);
+}

@@ -25,15 +25,16 @@ block body
 						h3.panel-title Our Top Sponsors
 					.panel-body
 						.panel-body
-						mixin sponsor(name)
+						mixin sponsor(name, small)
+							- small = small || false
 							- url = "assets/imgs/sponsors/" + name + ".jpg"
-							img.img-responsive.sponsor(src = url)
+							img.img-responsive(src = url, class = small ? "sponsor-small-height" : "")
 						.row
 							.col-xs-4
-								+sponsor("nutmeg")
+								+sponsor("pw")
 							.col-xs-4
-								+sponsor("lagana")
+								+sponsor("bestbuy")
 							.col-xs-4
-								+sponsor("tallan")
+								+sponsor("uhart", true)
 					.panel-footer
 						a(href = "sponsors") View All

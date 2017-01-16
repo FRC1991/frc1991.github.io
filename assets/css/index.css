@@ -23,3 +23,8 @@ body {
 	position: relative;
   transform: translateY(60%);
 }
+
+.club {
+	max-height: 35vh;
+	margin: 0 auto;
+}

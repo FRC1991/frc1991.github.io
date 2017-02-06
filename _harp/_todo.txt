@@ -1,0 +1,2 @@
+* Change 4-H clover link to custom donations page
+* Add 4-H and Uconn extension as sponsors

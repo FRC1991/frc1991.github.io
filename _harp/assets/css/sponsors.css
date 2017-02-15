@@ -7,5 +7,6 @@
 }
 
 .sponsor:hover {
-	opacity: .5;
+	outline: 2px auto #FF0000;
+	outline-offset: 5px;
 }

@@ -1,0 +1,11 @@
+.row.padded {
+	padding: 4.5rem;
+}
+
+.sponsor {
+	margin-bottom: 5vh;
+}
+
+.sponsor:hover {
+	opacity: .5;
+}

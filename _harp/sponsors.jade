@@ -1,38 +1,39 @@
 extends _templates/base.jade
 
 block head
-	title Sponsors | FRC 4-H Team 1991
-	link(rel = "stylesheet", href = "assets/css/sponsors.css")
+    title Sponsors | FRC 4-H Team 1991
+    link(rel = "stylesheet", href = "assets/css/sponsors.css")
 
 block body
-	.container-fluid
-		.row
-			.col-md-10.col-md-offset-1
-				.panel.panel-default
-					.panel-heading
-						h3.panel-title Our Sponsors
-					.panel-body
-						h4 We are still competing thanks to our proud sponsors.
-						p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
-						.make-slightly-longer-pls
-						mixin sponsor(name, site)
-							- url = "assets/imgs/sponsors/" + name + ".jpg"
-							a(href = site, target = "_blank") 
-								img.img-responsive.sponsor(src = url)
-						.row.padded
-							.col-xs-6
-								+sponsor("pw", "http://www.pw.utc.com/")
-								+sponsor("bestbuy", "https://corporate.bestbuy.com/community-grants-page/")
-								+sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
-								+sponsor("lagana", "http://www.laganaflorist.com/")
-								+sponsor("tallan", "https://www.tallan.com/")
-								+sponsor("tsunami-tsolutions", "http://www.tsunamitsolutions.com/")
-								+sponsor("4-h", "http://4h.uconn.edu/")
-							.col-xs-6
-								+sponsor("uhart", "http://www.hartford.edu/")
-								+sponsor("aetna", "https://www.aetna.com/")
-								+sponsor("stm", "http://www.satellitetoolmachine.net/")
-								+sponsor("pas", "http://www.pas-technologies.com/")
-								+sponsor("schaller", "http://www.schalleracura.com/")
-								+sponsor("prokop", "https://www.attorneyunion.org/company-kutz-prokop-in-portland-ct-89485")
-								+sponsor("uconn-extension", "http://www.extension.uconn.edu/")
+    .container-fluid
+        .row
+            .col-md-10.col-md-offset-1
+                .panel.panel-default
+                    .panel-heading
+                        h3.panel-title Our Sponsors
+                    .panel-body
+                        h4 We are still competing thanks to our proud sponsors.
+                        p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
+                        .make-slightly-longer-pls
+                        mixin sponsor(name, site)
+                            - url = "assets/imgs/sponsors/" + name + ".jpg"
+                            a(href = site, target = "_blank") 
+                                img.img-responsive.sponsor(src = url)
+                        .row.padded
+                            .col-xs-6
+                                +sponsor("pw", "http://www.pw.utc.com/")
+                                +sponsor("bestbuy", "https://corporate.bestbuy.com/community-grants-page/")
+                                +sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
+                                +sponsor("lagana", "http://www.laganaflorist.com/")
+                                +sponsor("saybrook", "http://saybrookhardware.com/")
+                                +sponsor("tallan", "https://www.tallan.com/")
+                                +sponsor("tsunami-tsolutions", "http://www.tsunamitsolutions.com/")
+                                +sponsor("4-h", "http://4h.uconn.edu/")
+                            .col-xs-6
+                                +sponsor("uhart", "http://www.hartford.edu/")
+                                +sponsor("aetna", "https://www.aetna.com/")
+                                +sponsor("stm", "http://www.satellitetoolmachine.net/")
+                                +sponsor("pas", "http://www.pas-technologies.com/")
+                                +sponsor("schaller", "http://www.schalleracura.com/")
+                                +sponsor("prokop", "https://www.attorneyunion.org/company-kutz-prokop-in-portland-ct-89485")
+                                +sponsor("uconn-extension", "http://www.extension.uconn.edu/")

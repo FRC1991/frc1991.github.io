@@ -1,0 +1,30 @@
+body {
+	padding-top: 65px !important;
+}
+
+.jumbotron {
+	background-image: url("../imgs/team.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+	background-color: rgba(0, 0 ,0, 0.5);  
+  background-blend-mode: multiply;
+}
+
+.jumbotron .container {
+	padding-bottom: 9em;
+}
+
+.jumbotron h1 {
+	font-weight: 300;
+}
+
+.sponsor-small-height {
+	position: relative;
+  transform: translateY(60%);
+}
+
+.club {
+	max-height: 35vh;
+	margin: 0 auto;
+}

@@ -48,11 +48,9 @@ block body
 									- url = "assets/imgs/sponsors/" + name + ".jpg"
 									img.img-responsive(src = url, class = small ? "sponsor-small-height" : "")
 								.row
-									.col-xs-4
-										+sponsor("pw")
-									.col-xs-4
+									.col-xs-6
+										+sponsor("mortensonfoundation")
+									.col-xs-6
 										+sponsor("solidworks")
-									.col-xs-4
-										+sponsor("uhart", true)
 							.panel-footer
 								a(href = "sponsors") View All

@@ -10,3 +10,19 @@
 	outline: 2px auto #FF0000;
 	outline-offset: 5px;
 }
+
+.sponsor.text {
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.sponsor.text:hover {
+	outline: 2px auto #FF0000;
+	outline-offset: 5px;
+}
+.img-center {
+	display: table-cell;
+	vertical-align: middle;
+}

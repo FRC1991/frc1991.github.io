@@ -1,3 +1,43 @@
+//- extends _templates/base.jade
+
+//- block head
+//-     title Sponsors | FRC 4-H Team 1991
+//-     link(rel = "stylesheet", href = "assets/css/sponsors.css")
+
+//- block body
+//-     .container-fluid
+//-         .row
+//-             .col-md-10.col-md-offset-1
+//-                 .panel.panel-default
+//-                     .panel-heading
+//-                         h3.panel-title Our Sponsors
+//-                     .panel-body
+//-                         h4 We are still competing thanks to our proud sponsors. 
+//-                         p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
+//-                         .make-slightly-longer-pls
+//-                         mixin sponsor(name, site)
+//-                             - url = "assets/imgs/sponsors/" + name + ".jpg"
+//-                             a(href = site, target = "_blank") 
+//-                                 img.img-responsive.sponsor(src = url)
+//-                         .row.padded
+//-                             .col-xs-6
+//-                                 +sponsor("mortensonfoundation","https://mortensonfamily.org/")
+//-                                 +sponsor("solidworks", "https://www.solidworks.com/")
+//-                                 +sponsor("hps", "https://www.hartfordschools.org/")
+//-                                 +sponsor("lagana", "http://www.laganaflorist.com/")
+//-                                 +sponsor("saybrook", "http://saybrookhardware.com/")
+//-                                 +sponsor("tallan", "https://www.tallan.com/")
+//-                                 +sponsor("tsunami-tsolutions", "http://www.tsunamitsolutions.com/")
+//-                                 +sponsor("4-h", "http://4h.uconn.edu/")
+//-                             .col-xs-6
+//-                                 +sponsor("uhart", "http://www.hartford.edu/")
+//-                                 +sponsor("pw", "http://www.pw.utc.com/")
+//-                                 +sponsor("aetna", "https://www.aetna.com/")
+//-                                 +sponsor("stm", "http://www.satellitetoolmachine.net/")
+//-                                 +sponsor("pas", "http://www.pas-technologies.com/")
+//-                                 +sponsor("schaller", "http://www.schalleracura.com/")
+//-                                 +sponsor("prokop", "https://www.attorneyunion.org/company-kutz-prokop-in-portland-ct-89485")
+//-                                 +sponsor("uconn-extension", "http://www.extension.uconn.edu/")
 extends _templates/base.jade
 
 block head
@@ -13,27 +53,84 @@ block body
                         h3.panel-title Our Sponsors
                     .panel-body
                         h4 We are still competing thanks to our proud sponsors. 
-                        p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor's logo to be taken to their website.
+                        p #[span.glyphicon.glyphicon-info-sign] Click on a sponsor to be taken to their website.
                         .make-slightly-longer-pls
                         mixin sponsor(name, site)
                             - url = "assets/imgs/sponsors/" + name + ".jpg"
-                            a(href = site, target = "_blank") 
-                                img.img-responsive.sponsor(src = url)
+                            a(href = site, target = "_blank").img-center
+                                img.img-responsive.sponsor(src = url, style="object-fit: cover; width: 100%;")
+                        mixin name(name, site)
+                            a(href = site, target = "_blank").sponsor.text
+                                p #{name}
                         .row.padded
-                            .col-xs-6
-                                +sponsor("pw", "http://www.pw.utc.com/")
-                                +sponsor("solidworks", "https://www.solidworks.com/")
-                                +sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
-                                +sponsor("lagana", "http://www.laganaflorist.com/")
-                                +sponsor("saybrook", "http://saybrookhardware.com/")
-                                +sponsor("tallan", "https://www.tallan.com/")
-                                +sponsor("tsunami-tsolutions", "http://www.tsunamitsolutions.com/")
-                                +sponsor("4-h", "http://4h.uconn.edu/")
-                            .col-xs-6
-                                +sponsor("uhart", "http://www.hartford.edu/")
-                                +sponsor("aetna", "https://www.aetna.com/")
-                                +sponsor("stm", "http://www.satellitetoolmachine.net/")
-                                +sponsor("pas", "http://www.pas-technologies.com/")
-                                +sponsor("schaller", "http://www.schalleracura.com/")
-                                +sponsor("prokop", "https://www.attorneyunion.org/company-kutz-prokop-in-portland-ct-89485")
-                                +sponsor("uconn-extension", "http://www.extension.uconn.edu/")
+                            .panel.panel-warning
+                                .panel-heading
+                                    h3.panel-title Title Sponsors ($5,000)
+                                .panel-body
+                                    .col-xs-6
+                                        +sponsor("mortensenfoundation")
+                                    .col-xs-6
+                                        +sponsor("solidworks", "https://www.solidworks.com/")
+                            .panel.panel-default
+                                .panel-heading(style="background-color: #e5e4e2")
+                                    h3.panel-title Platinum ($2000-4999)
+                                .panel-body
+                                    .col-xs-6
+                                        +sponsor("hps", "https://www.hartfordschools.org/")
+                                    .col-xs-6
+                                        +sponsor("utc", "http://www.utc.com/")
+                            .panel.panel-default
+                                .panel-heading(style="background-color: #ffd700")
+                                    h3.panel-title Gold ($1000-1999)
+                                .panel-body
+                                    .col-xs-4
+                                        +sponsor("tsunami-tsolutions", "http://www.tsunamitsolutions.com/")
+                                    .col-xs-4
+                                        +sponsor("litchfield-county-pediatrics", "http://www.lcpediatrics.com/")
+                                    .col-xs-4
+                                        +sponsor("unitedhealthcare", "https://www.uhc.com/")
+                            .panel.panel-default
+                                .panel-heading(style="background-color: #C0C0C0")
+                                    h3.panel-title Silver ($101-999)
+                                .panel-body
+                                    .col-xs-3
+                                        +sponsor("aetna", "https://www.aetna.com")
+                                    .col-xs-3
+                                        +sponsor("constructioninsight", "http://constructioninsightinc.com/")
+                                    .col-xs-3
+                                        +sponsor("emcore","https://emcorgroup.com/")
+                                    .col-xs-3
+                                        +sponsor("hillside", "http://hillsideautomotive.com/")
+                                    .col-xs-3
+                                        +sponsor("ibm", "https://www.ibm.com/")
+                                    .col-xs-3
+                                        +sponsor("uconn-logo", "https://uconn.edu/")
+                                    .col-xs-3
+                                        +sponsor("kkc", "https://www.kkc-law.com/")
+                                    .col-xs-3
+                                        +sponsor("nutmeg", "https://www.nutmegstatefcu.org/")
+                                    .col-xs-3
+                                        +sponsor("tallan", "https://tallan.com/")
+                                    .col-xs-3
+                                        +sponsor("lagana", "https://www.laganaflorist.com/")
+                                .panel-body
+                                    .col-xs-3
+                                        +name("Dione Family")
+                                    .col-xs-3
+                                        +name("Ganoe Family")
+                                    .col-xs-3
+                                        +name("Horton Family")
+                                    .col-xs-3
+                                        +name("James Rovella")
+                            .panel.panel-default
+                                .panel-heading(style="background-color: #cd7f32")
+                                    h3.panel-title Bronce ($1-100)
+                                .panel-body
+                                    .col-xs-3
+                                        +name("Bresciano Family")
+                                    .col-xs-3
+                                        +name("Dettmer Family")
+                                    .col-xs-3
+                                        +sponsor("edro", "https://www.edrocorp.com/")
+                                    .col.xs.3
+                                        +sponsor("schaller", "https://www.schalleracura.com/")

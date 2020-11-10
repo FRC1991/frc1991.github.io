@@ -24,7 +24,7 @@ jobs:
       - name: Install harp
         run: |
           cd _harp
-          npm install harp
+          npm install -g harp
           
       - name: Compile
         run: harp compile . ../

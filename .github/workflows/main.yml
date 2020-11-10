@@ -28,9 +28,7 @@ jobs:
           
       - name: Print
         run: |
-          ls ./_harp/node_modules
-          ls ./_harp/node_modules/harp
-          ls ./_harp/node_modules/harp/bin
+          ls ./_harp/node_modules/harp/bin/harp
           
       - name: Compile
         run: node ./_harp/compile.js

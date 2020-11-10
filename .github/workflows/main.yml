@@ -26,12 +26,8 @@ jobs:
           cd _harp
           npm install harp
           
-      - name: Print
-        run: |
-          ls ./_harp/node_modules/harp/bin/harp
-          
       - name: Compile
-        run: node ./_harp/compile.js
+        run: ./_harp/node_modules/harp/bin/harp compile ./ ../
       
       - name: Push
         run: |

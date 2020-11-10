@@ -24,10 +24,10 @@ jobs:
       - name: Install harp
         run: |
           cd _harp
-          npm install -g harp
+          npm install harp
           
       - name: Compile
-        run: harp compile . ../
+        run: node compile.js
       
       - name: Push
         run: |

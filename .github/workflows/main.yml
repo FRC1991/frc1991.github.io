@@ -30,7 +30,7 @@ jobs:
         run: |
           ls ./_harp/node_modules
           ls ./_harp/node_modules/harp
-          ls ./_harp/node_modules/bin
+          ls ./_harp/node_modules/harp/bin
           
       - name: Compile
         run: node ./_harp/compile.js

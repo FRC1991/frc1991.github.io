@@ -27,7 +27,7 @@ jobs:
           npm install harp
           
       - name: Compile
-        run: node compile.js
+        run: node ./compile.js
       
       - name: Push
         run: |
